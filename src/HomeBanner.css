@@ -1,0 +1,42 @@
+/* src/HomeBanner.css */
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 45px); /* Adjust 60px if your navbar has a different height */
+    background-image: url('./image.jpeg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .banner h1 {
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: 600;
+
+  }
+  
+  .banner p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    color: seashell;
+  }
+  
+  .banner button {
+    background-color: #C0C0C0; /* Soft silver */
+   border: 1px solid #A9A9A9; /* Slightly darker than the background for definition */
+   color: #333333; /* Dark gray text color */
+   padding: 10px 20px; /* Adjust as needed */
+   border-radius: 5px; /* Slightly rounded corners */
+   font-family: 'Sans-serif'; /* Or any elegant font you've chosen */
+   transition: all 0.3s ease; /* Smooth transition for hover effects */
+   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  .banner button:hover{
+    background-color: #A9A9A9; /* A tad darker on hover */
+   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  }
+  

@@ -1,0 +1,46 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0;
+  justify-content: space-around;
+  padding: 0% 5%;
+}
+
+.fade-in {
+  opacity: 0;
+  margin: 1%;
+  transition: transform 0.3s;
+  width: 50vh; /* or any desired width */
+  height: 50vh; /* maintain aspect ratio */
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+.gallery img.loaded {
+  opacity: 1;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+}
+
+.visible {
+  opacity: 1;
+}
+
+.gallery-selector {
+  display: flex;
+  height: 5vh;
+  justify-content: space-evenly;
+}
+
+.gallery-selector button {
+  border-radius: 3px;
+  font-size: large;
+  flex: auto;
+  background-color: white;
+  border: none;
+}
+.gallery-selector button.selected {
+  background-color: lightgray;
+}
